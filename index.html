@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <title>Java Documentaion</title>
+</head>
+
+<body>
+
+
+    <div class="row">
+        <aside class="col-md-3">
+            <nav id="navbar">
+                <br>
+                <header class="text-center">
+                    <h4>Java Documentaion</h4>
+                </header>
+                <ul>
+                    <li>
+                        <div class="linktitle">
+                            <a href="#Introduction_to_Java_Programming" class="nav-link">Introduction to Java Programming</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="linktitle">
+                            <a href="#Basic_Java_Programming_Guidelines" class="nav-link">Basic Java Programming Guidelines</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="linktitle">
+                            <a href="#Source_Code" class="nav-link">Source Code</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="linktitle">
+                            <a href="#Compiling_a_Java_Program_or_Class" class="nav-link">Compiling a Java Program or Class</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="linktitle">
+                            <a href="#Executing_a_Java_Program_or_Class" class="nav-link">Executing a Java Program or Class</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="linktitle">
+                            <a href="#Example_Codes" class="nav-link">Example Codes</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="col-md-9">
+            <h1 class="text-center">JAVA</h1>
+            <main id="main-doc">
+                <section class="main-section" id="Introduction_to_Java_Programming">
+                    <header class="topic">Introduction to Java Programming</header>
+                    <article>
+                        <p>Java is a powerful object-oriented programming language introduced by Sun Microsystems in 1995, which
+                            has built-in support to create programs with a graphical user interface (GUI), utilize the Internet,
+                            create client-server solutions, and much more. Programs written in Java can run, without change,
+                            on any of the common computer operating systems Windows 95/NT, Macintosh, and Unix. A variant
+                            of Java programs called applets can be embedded inside a web page and execute on the computer
+                            that is viewing the page, automatically and in a secure environment.
+                        </p>
+                        <p>
+                            As a language, Java is closely related to C++, which is also object-oriented but retains a lot of idiosyncrasies inherited
+                            from its predecessor language C. Java has removed the inconsistent elements from C++, is exclusively
+                            object-oriented, and can be considered a modern version of C++.1 Because of its logical structure
+                            Java has quickly become a popular choice as a teaching language,2 and because of its extensive
+                            Internet support and the promise of writing programs once and using them on every operating system
+                            Java is becoming more and more accepted in industry.
+                        </p>
+                    </article>
+                </section>
+                <section class="main-section" id="Basic_Java_Programming_Guidelines">
+                    <header class="topic">Basic Java Programming Guidelines</header>
+                    <article>
+                        <p>Every Java program must follow these guidelines:</p> &nbsp;
+                        <li>Java is case sensitive, i.e. the word Program is different from program.</li>
+                        <li>Curly brackets { and } are used to group statements together.</li>
+                        <li>An executable Java program must contain at least the following lines as a framework:</li>
+                        <code>
+                             public class Name 
+                             { public static void main(String args[]) 
+                                { ... program code ... } 
+                            }
+                        </code>
+                        <li>Every statement whose next statement is not a separate group must end in a semicolon.</li>
+                        <li>A Java program containing the above framework must be saved using the filename Name.java, where Name
+                            (including correct upper and lower cases) is the word that follows the keywords public class
+                            and the file extension is .java.</li>
+
+                        <p>
+                            In other words, to create a Java program you first create a text file containing the lines
+                            <br>
+                            <code>
+                                 public class Name { 
+                                     public static void main(String args[])
+                                     { ... more lines ... } 
+                                    }
+                             </code> The file containing our code is called the source code file.
+                        </p>
+                    </article>
+                </section>
+                <section class="main-section" id="Source_Code">
+                    <header class="topic">Source Code</header>
+                    <article>
+                        <p>
+                            A Java source code file is a text file that contains programming code written according to the Java language specifications,
+                            resembling a mixture of mathematical language and English. A computer cannot execute source code,
+                            but humans can read and understand it.
+                        </p>
+                        <p>
+                            Java source code files should be saved as Name.java, where Name is the name that appears in the first line of the program:
+                            public class Name. That Name is referred to as the name of the class, or program. By convention
+                            its first letter is capitalized.
+                        </p>
+
+                        <p>
+                            Here is an example of a Java source code file. We will later explain what the various lines mean; for now it is simply a
+                            text file that looks as shown.
+                        </p>
+
+                        <h5>Example: The first source code file</h5>
+                        <p>Create a source code file containing the necessary Java code to get the computer to write "Hi – this
+                            is my first program" on the screen.</p>
+                        Our first Java program looks as follows:
+                        <br>
+                        <code>
+                             public class Test 
+                             { public static void main(String args[]) 
+                                { 
+                                    System.out.println("Hi – this is my first program"); 
+                                } 
+                            }
+                         </code> This program, or class, is called Test and must be saved under the file name Test.java.
+                        <br>
+                    </article>
+                </section>
+                <section class="main-section" id="Compiling_a_Java_Program_or_Class">
+                    <header class="topic">Compiling a Java Program or Class</header>
+                    <article>
+                        <p>
+                            A source code file, which is more or less readable in plain English, needs to be transformed into another format before the
+                            computer can act upon it. That translation process is called compiling and is accomplished using
+                            the Java compiler javac from the Java Developer's Kit (JDK), which could be invoked by an IDE
+                            such as BlueJ.
+                        </p>
+                        <h4>Compiling:</h4>
+                        <p>
+                            Compiling is the process of transforming the source code file into a format that the computer can understand and process.
+                            The resulting file is called the byte-code, or class, file. The name of the class file is the
+                            same as the name of the program plus the extension .class. The program javac from the Java Developer's
+                            Kit is used to transform a source code file into a class file.
+                        </p>
+                        <p>
+                            If a source code contains any errors, they are flagged by the compiler. You need to fix them and re-compile until there are
+                            no further errors.
+                        </p>
+                    </article>
+                </section>
+                <section class="main-section" id="Executing_a_Java_Program_or_Class">
+                    <header class="topic">Executing a Java Program or Class</header>
+                    <article>
+                        <p>
+                            The Java compiler does not produce an executable file, so Java programs can not execute under the operating system of your
+                            machine. Instead they execute inside a Java Virtual Machine, which is invoked using the java
+                            program of the JDK.
+                        </p>
+                        <h4>Executing a Class File</h4>
+                        <p>To execute a Java program the Java Developer's Kit provides a program called java. When executing
+                            that program with your class file as parameter the following happens:
+                        </p>
+                        <li>the Java Virtual Machine (JVM) is created inside your computer</li>
+                        <li>the JVM locates and reads your class files</li>
+                        <li>the JVM inspects your class file for any security violations</li>
+                        <li>
+                            the JVM executes, or interprets, your class file according to its instructions if possible Under Windows and Unix, execute
+                            a program by typing at the command prompt java Name, where Name is the name of the program (no
+                            extension). On a Macintosh, double-click the java icon and select the appropriate class file.
+                        </li>
+
+                        <p>
+                            Most IDE’s allow for a convenient way to execute a file. In BlueJ you right-click on a compiled class and select the “main”
+                            method.
+                        </p>
+                    </article>
+                </section>
+                <section class="main-section" id="Example_Codes">
+                    <header class="topic">Example Codes</header>
+                    <article>
+                        <h4>Example: A Temperature Conversion Program</h4>
+                        <code>
+                                public class Converter 
+                                { public static void main(String args[]) 
+                                { 
+                                    // Printing out a welcoming message 
+                                    System.out.println("Welcome to my Temperature Converter."); 
+                                    System.out.println("\nProgram to convert Fahrenheit to Celcius.\n");
+        
+                                    // Defining the temperature value in Fahrenheit 
+                                    double temp = 212.0; 
+        
+                                    // Applying conversion formula and storing answer in another variable 
+                                    double convertedTemp = 5.0 / 9.0 * (temp - 32.0);
+        
+                                    // Printing out the complete answer 
+                                    System.out.println(temp + " Fahrenheit = " + convertedTemp + " Celcius."); 
+                                } 
+                            }
+                        </code>
+                        <hr>
+                        <h4>Example: Check even or odd</h4>
+                        <code>
+                                import java.util.Scanner; 
+                                class CheckEvenOdd 
+                                { public static void main(String args[]) 
+                                { 
+                                    int num; 
+                                    System.out.println("Enter an Integer number:"); 
+                                    //The input provided by user is stored in num 
+                                    Scanner input = new Scanner(System.in); 
+                                    num = input.nextInt();
+                                    /* If number is divisible by 2 then it's an even number * else odd number*/ 
+                                    if ( num % 2 == 0 ) 
+                                        System.out.println("Entered number is even"); 
+                                    else 
+                                        System.out.println("Entered number is odd"); 
+                                } 
+                            }
+                        </code>
+                    </article>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+
+</html>

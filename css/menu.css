@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css?family=Encode+Sans+Condensed");
+
+html {
+  height: 100%;
+}
+
+main {
+  color: black;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body {
+  background: #fff;
+  padding: 10px;
+  font-family: "Encode Sans Condensed", sans-serif;
+  color: #000;
+  padding: 0px;
+  margin: 0px;
+}
+
+aside {
+  height: 800px;
+  width: 150px;
+  background: #222527;
+  position: fixed;
+}
+
+#navbar {
+  height: 1000px;
+  width: 180px;
+  background: #222527;
+  position: fixed;
+}
+
+aside h4 {
+  color: white;
+  font-size: 25px;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  border-bottom: 1px solid #1c1f21;
+}
+
+ul li {
+  list-style-type: none;
+  color: #5a5b5b;
+  padding: 8px;
+  border-bottom: 1px solid #272a2c;
+  border-top: 1px solid #1c1f21;
+  overflow: auto;
+  cursor: pointer;
+}
+
+ul li:first-child {
+  border-top: none;
+}
+
+.fa {
+  color: #18a3fc;
+  display: block;
+}
+
+ul li:hover .fa {
+  color: #0f82da;
+}
+
+ul li:hover .linktitle {
+  color: #6c6d6e;
+}
+
+ul li div {
+  float: left;
+}
+
+.icons {
+  padding: 10px;
+}
+
+.linktitle {
+  line-height: 35px;
+  padding-left: 10px;
+}
+
+.topic {
+  color: black;
+  font-size: 30px;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+  text-align: left;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section ul li {
+  margin: 15px 0px 0px 20px;
+}
+
+aside li a {
+  color: #7f8c8d;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+/* Reponsive menu code */
+@media all and (max-width: 815px) {
+  aside {
+    width: 60px;
+    padding: 0px 10px;
+  }
+
+  ul li {
+    overflow: hidden;
+    padding: 0px 10px;
+  }
+
+  .linktitle {
+    position: absolute;
+    z-index: -1;
+    left: -50px;
+    padding: 29px 15px;
+    line-height: 0px;
+    background: #222527;
+  }
+
+  ul li:hover .linktitle {
+    left: 80px;
+  }
+  .icons {
+    padding: 20px 10px;
+  }
+
+  ul li:hover .icons {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
